@@ -16,7 +16,9 @@ function audit() {
 
 function result(style) {
   let arr;
-  arr = style.split("-");
+  let styleLow;
+  styleLow = style.toLowerCase();
+  arr = styleLow.split("-");
   let result = arr[0];
 
   for (let i = 1; i < arr.length; i++) {
